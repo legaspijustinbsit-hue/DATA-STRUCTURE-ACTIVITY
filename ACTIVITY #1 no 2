@@ -1,0 +1,27 @@
+printf("\n");
+
+    printf("Problem 1: Numbers from 10 to 0:\n");
+    i = 10;
+    while (i >= 0) {
+        printf("%d ", i);
+        i--;
+    }
+    printf("\n\n");
+
+    // Problem 2: Sum of Positive Integers Until 0
+    int num, sum = 0;
+
+    printf("Problem 2: Enter a series of integers (enter 0 to stop):\n");
+    while (1) {
+        printf("Enter a number: ");
+        scanf("%d", &num);
+
+        if (num == 0) {
+            break;
+        }
+
+        if (num > 0) {
+            sum += num;
+        }
+    }
+    printf("Problem 2: Sum of positive integers: %d\n\n", sum);
